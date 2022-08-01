@@ -4,7 +4,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 function ProductBikes({pro}) {
 
-  console.log(pro);
+  
 const {title, thumbnail, quantity, description} = pro.fields;
 
 
@@ -22,9 +22,11 @@ const {title, thumbnail, quantity, description} = pro.fields;
       <div style={{color: description === 'SOLD'? 'text-red-500': 'black'}} className='text-black font-bold'>{documentToReactComponents(description)}</div>
       <h4 className='text-xl font-bold'>In stock: {quantity}</h4>
       <section className='mt-5'>
+      <a href='#contact'>
       <button className='bg-red-500 text-white font-bold p-4
         rounded-sm
       '>Get a quote</button>
+      </a>
       </section>
         </div>
       

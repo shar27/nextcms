@@ -9,7 +9,14 @@ module.exports = {
     fontFamily:{
       arial: ['arial']
     },
-    extend: {},
+    
+    extend: {
+      height:{
+        xxl: '27rem',
+        xxl2: '29rem',
+        xxl3: '32rem',
+      },
+    },
   },
   plugins: [],
 }

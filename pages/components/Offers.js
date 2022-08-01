@@ -5,7 +5,7 @@ function Offers(offer) {
   
   const {specialOffers} = offer.offer.fields;
     return (
-    <div>{documentToReactComponents(specialOffers)}</div>
+    <div className='text-xl leading-8'>{documentToReactComponents(specialOffers)}</div>
   )
 }
 

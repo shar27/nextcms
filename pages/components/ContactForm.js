@@ -7,16 +7,18 @@ export default function ContactUs () {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
+    // process.env.YOUR_TEMPLATE_ID
+    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-  };
+  };  
 
   return (
-    <form className='border border-2 border-black h-96 w-2/5  text-center  p-5' ref={form} onSubmit={sendEmail}>
+    <form className='border border-2 border-black h-xxl2 lg:h-96 
+    w-full lg:w-2/5  text-center mt-5  p-5' ref={form} onSubmit={sendEmail}>
       <section>
       <label className='font-bold p-5'>Name</label>
       <input className='w-80 border-2 border-black  rounded-sm mb-5' type="text" name="user_name" />
@@ -30,7 +32,7 @@ export default function ContactUs () {
       <textarea className='w-80 border-2 border-black mt-5 h-32' name="message" />
       </section>
       <section className='pt-5'>
-      <input className='w-44 p-4 bg-red-500 text-white font-bold rounded-sm' type="submit" value="Send" />
+      <input className='w-44 p-4 bg-red-500 text-white font-bold rounded-sm cursor-pointer' type="submit" value="Send" />
       </section>
     </form>
   );
