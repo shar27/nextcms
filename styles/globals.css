@@ -11,11 +11,14 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: black;
+    color: white;
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
+  
 }
 
 li a {
