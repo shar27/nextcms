@@ -11,7 +11,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Offers from './components/Offers';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
