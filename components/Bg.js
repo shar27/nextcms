@@ -6,6 +6,7 @@ function Bg(h) {
 
   const {url} = h.h.fields.heroBg.fields.file;
 
+
   return (
     <div>
       

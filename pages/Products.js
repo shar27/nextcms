@@ -1,33 +1,33 @@
 import React from 'react'
 
-import ProductBikes from './components/ProductBikes';
+// // import ProductBikes from './components/ProductBikes';
 
 
-import { createClient } from 'contentful';
-import contentful from 'contentful'
+// import { createClient } from 'contentful';
+// import contentful from 'contentful'
 
 
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
 
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  })
+//   const client = createClient({
+//     space: process.env.CONTENTFUL_SPACE_ID,
+//     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+//   })
 
-const res = await client.getEntries({
-  content_type: 'product'
-})
+// const res = await client.getEntries({
+//   content_type: 'product'
+// })
 
-console.log(res);
+// console.log(res);
 
-return {
-  props:{
-    products: res.items
-  }
-}
+// return {
+//   props:{
+//     products: res.items
+//   }
+// }
 
-}
+// }
 
 
 function Products({products}) {
@@ -35,12 +35,12 @@ function Products({products}) {
   return (
     <div className='p-4'>
 
-      {products.map((product, prod)=> (
+      {/* {products.map((product, prod)=> (
         <ProductBikes
         key={prod}
         product={product}
         />
-      ))}
+      ))} */}
 
     </div>
   )

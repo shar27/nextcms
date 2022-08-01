@@ -3,7 +3,7 @@ import React from 'react'
 
 function Offers(offer) {
   
-  const {specialOffers} = offer.offer.fields;
+  const {specialOffers} = offer?.offer?.fields;
     return (
     <div className='text-xl leading-8'>{documentToReactComponents(specialOffers)}</div>
   )

@@ -1,17 +1,17 @@
 import Head from 'next/head'
 import { createClient } from 'contentful' 
-import Footer from './components/Footer';
-import Bg from './components/Bg';
-import ContactForm from './components/ContactForm'
+import Footer from '../components/Footer';
+import Bg from '../components/Bg';
+import ContactForm from '../components/ContactForm'
 // import ReactPlayer from 'react-player';
 import { useEffect, useState } from 'react';
-import ProductBikes from './components/ProductBikes';
-import Nav from './components/Nav';
-import About from './components/About';
-import Services from './components/Services';
-import Offers from './components/Offers';
+import ProductBikes from '../components/ProductBikes';
+import Nav from '../components/Nav';
+import About from '../components/About';
+import Services from '../components/Services';
+import Offers from '../components/Offers';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -35,6 +35,11 @@ const resAbout = await client.getEntries({
 
 })
 
+const resLogo = await client.getEntries({
+  content_type: 'logo'
+
+})
+
 const resServices = await client.getEntries({
   content_type: 'services'
 })
@@ -48,7 +53,8 @@ return {
     services: resServices.items,
     about: resAbout.items
     
-  }
+  },
+  revalidate: 10,
 }
 
 }
@@ -57,7 +63,7 @@ return {
 
 
 
-export default function Home({hero, product, offers, services, about}) {
+export default function Home({hero, product, offers, services, about, logo}) {
   
   
   // const [isPlaying, setIsPlaying] = useState(true);
@@ -77,7 +83,13 @@ export default function Home({hero, product, offers, services, about}) {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className="relative z-0 w-full h-xxl3 lg:h-screen backdrop-opacity-50	">
-    <Nav/>
+    
+      <Nav
+    
+    
+    />
+    
+    
    
    {hero.map((h, idx) => (
     <Bg
