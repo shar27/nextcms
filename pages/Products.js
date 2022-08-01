@@ -35,8 +35,9 @@ function Products({products}) {
   return (
     <div className='p-4'>
 
-      {products.map((product)=> (
+      {products.map((product, prod)=> (
         <ProductBikes
+        key={prod}
         product={product}
         />
       ))}

@@ -152,9 +152,10 @@ export default function Home({hero, product, offers, services, about}) {
       
 
     <div id='Bikes' className='grid grid-cols-1 lg:grid-cols-3 gap-5 mt-20'>
-    {product.map((pro)=> (
+    {product.map((pro, p)=> (
         <ProductBikes
         pro={pro}
+        p={p}
         />
       ))}
     </div>
