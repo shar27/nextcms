@@ -172,7 +172,12 @@ export default function Home({hero, product, offers, services, about, logo}) {
         />
       ))}
     </div>
+    
+    <h1 className='text-4xl text-center'>Have a question?</h1>
     <div id='contact' className='flex justify-center'>
+      
+        
+      
     <ContactForm/>
     </div>
     <Footer/>

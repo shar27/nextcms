@@ -17,8 +17,10 @@ export default function ContactUs () {
   };  
 
   return (
+   
+
     <form className='border border-2 border-black h-xxl2 lg:h-96 
-    w-full lg:w-2/5  text-center mt-5  p-5' ref={form} onSubmit={sendEmail}>
+    w-full lg:w-2/5  text-center mt-10  p-5' ref={form} onSubmit={sendEmail}>
       <section>
       <label className='font-bold p-5'>Name</label>
       <input className='w-80 border-2 border-black  rounded-sm mb-5' type="text" name="user_name" />
@@ -35,5 +37,6 @@ export default function ContactUs () {
       <input className='w-44 p-4 bg-red-500 text-white font-bold rounded-sm cursor-pointer' type="submit" value="Send" />
       </section>
     </form>
+   
   );
 };
