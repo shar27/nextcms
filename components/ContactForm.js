@@ -13,7 +13,7 @@ export default function ContactUs () {
     emailjs.sendForm('service_h1h55e6', 'template_20q0qxs', form.current, process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
-          setText('Thank you, your email has been received')
+          setText('Thank you, your email has been received!')
       }, (error) => {
           console.log(error.text);
       });
