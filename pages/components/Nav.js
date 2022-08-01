@@ -11,6 +11,7 @@ function Nav() {
             <li className='list-none '><Image className=''
             src="/assets/Logo.png" width={150} height={100} /> </li>
             <li className='list-none mt-10'><a href='#services'>Services</a></li>
+            <li className='list-none mt-10'><a href='#Bikes'>Bikes</a></li>
             <li className='list-none mt-10'><a href='#contact'>Contact Us</a></li>
         </ul>
     </nav>
