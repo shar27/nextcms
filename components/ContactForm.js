@@ -8,7 +8,7 @@ export default function ContactUs () {
     e.preventDefault();
 
     // process.env.YOUR_TEMPLATE_ID
-    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY)
+    emailjs.sendForm('service_h1h55e6', 'template_3g4ntfs', form.current, process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
