@@ -106,7 +106,7 @@ export default function Home({hero, product, offers, services, about, logo}) {
         left-5 top-52 md:top-28 lg:top-52 ">
           
            <h1 className='font-serif font-bold text-white text-6xl md:text-6xl lg:text-9xl'> 
-           Best Harley's in Poznan.</h1>
+           Najlepsze motocykle w Poznaniu.</h1>
            <section className='flex justify-center mt-10'>
             
             <a href='#contact'>
