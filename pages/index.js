@@ -155,7 +155,7 @@ export default function Home({hero, product, offers, services, about}) {
     {product.map((pro, p)=> (
         <ProductBikes
         pro={pro}
-        p={p}
+        key={p}
         />
       ))}
     </div>
