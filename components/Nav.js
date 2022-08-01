@@ -62,16 +62,16 @@ function Nav() {
 
         <ul className="DESKTOP-MENU hidden lg:block space-x-8 lg:flex text-2xl p-2">
           <li className="list-none">
-            <a href="#about">About</a>
+            <a href="#about">Nas</a>
           </li>
           <li className="list-none">
-            <a href="#services">Services</a>
+            <a href="#services">usługi</a>
           </li>
           <li className="list-none">
             <a href="#Bikes">Bikes</a>
           </li>
           <li className="list-none">
-            <a href="#contact">Contact</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
       </nav>
