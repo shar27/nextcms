@@ -10,6 +10,7 @@ function Bg(h) {
     <div>
       
     <Image 
+    alt='Poznan-Bikes'
     src={'https:'+ url}
     className='opacity-70'
     layout='fill'

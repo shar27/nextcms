@@ -9,7 +9,7 @@ function Nav() {
          md:text-lg lg:text-2xl  font-bold cursor-pointer '>
             <li className='list-none mt-5 lg:mt-10'><a>Home</a></li>
             <li className='list-none mt-5 lg:mt-10'><a href='#about'>About</a></li>
-            <li className='list-none '><Image className=''
+            <li className='list-none '><Image alt='poznan-bikes-home' className=''
             src="/assets/Logo.png" width={150} height={100} /> </li>
             <li className='list-none mt-5 lg:mt-10'><a href='#services'>Services</a></li>
             <li className='list-none mt-5 lg:mt-10'><a href='#Bikes'>Bikes</a></li>

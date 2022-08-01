@@ -14,6 +14,7 @@ const {title, thumbnail, quantity, description} = pro.fields;
       
         <div className='text-center'>
         <Image
+        alt='harleydavidsonpoznan'
           src={'https:' + thumbnail.fields.file.url}
           width={500}
           height={500}
