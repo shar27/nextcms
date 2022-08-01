@@ -45,16 +45,16 @@ function Nav() {
             <ul className="MENU-LINK-MOBILE-OPEN list-none flex flex-col items-center 
             justify-between min-h-[250px]">
               <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none" href="#about">About</a>
+                <a className="list-none text-white" href="#about">About</a>
               </li>
-              <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none" href="#Bikes">Bikes</a>
+              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-white" href="#Bikes">Bikes</a>
               </li>
-              <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none" href="#services">Services</a>
+              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-white" href="#services">Services</a>
               </li>
-              <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none" href="#contact">Contact</a>
+              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-white" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ function Nav() {
         height: 100vh;
         top: 0;
         left: 0;
-        background: white;
+        background: black;
         z-index: 10;
         display: flex;
         flex-direction: column;
