@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className='bg-black w-full h-12 text-black font-bold text-center cursor-pointer mt-20'>
         <ul>
-        <li className='p-2'><a className=''>Copyright 2022 Poznanmotocykl - Email:riflecitycustoms@gmail.com</a></li>
+        <li className='p-2'><a className=''>Copyright 2022  - </a></li>
         </ul>
     </footer>
   )
