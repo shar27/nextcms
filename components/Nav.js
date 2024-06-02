@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Image from 'next/image'
-import Logo from '../components/assets/Logo.png'
+import logo from '../components/assets/logo/logo.svg'
 
 function Nav() {
 
@@ -9,9 +9,9 @@ function Nav() {
 
   
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 ">
+    <div className="flex items-center justify-between border-b border-gray-400  bg-black">
       <a href="/">
-        <Image  src={Logo} alt="logo" width={200} height={150} />
+        <Image  src={logo} alt="logo" width={150} height={150} className="w-full max-w-md " />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -47,9 +47,7 @@ function Nav() {
               <li className="list-none border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="#about">About</a>
               </li>
-              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="#Bikes">Bikes</a>
-              </li>
+             
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="#services">Services</a>
               </li>
@@ -60,18 +58,19 @@ function Nav() {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden lg:block space-x-8 lg:flex text-2xl p-2">
-          <li className="list-none">
-            <a href="#about">Nas</a>
+        <ul className="DESKTOP-MENU hidden lg:flex justify-between text-xl ">
+          <li className="list-none p-2">
+            <a href="#about">About</a>
           </li>
-          <li className="list-none">
-            <a href="#services">usługi</a>
+          <li className="list-none p-2">
+            <a href="#services">Services</a>
           </li>
-          <li className="list-none">
-            <a href="#Bikes">Bikes</a>
+          <li className="list-none p-2">
+            <a href="#services">Work</a>
           </li>
-          <li className="list-none">
-            <a href="#contact">Kontakt</a>
+        
+          <li className="list-none p-2">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+
 export default function ContactUs () {
   const form = useRef();
   const [text, setText] = useState('')
@@ -21,27 +22,29 @@ export default function ContactUs () {
 
   return (
    
-
-    <form className='border border-2 border-black h-xxl3 lg:h-96 
+<div className='container max-w-xl p-20'>
     
-    w-full lg:w-2/5  text-center mt-10  p-5' ref={form} onSubmit={sendEmail}>
+    <h3 className='text-5xl text-black font-bold text-center'>Get in touch</h3>
+    <form className='p-5 
+     text-center mt-10 ' ref={form} onSubmit={sendEmail}>
       <p className='text-xl text-red-500 font-bold p-2'>{text}</p>
-      <section>
-      <label className='font-bold p-5'>Name</label>
-      <input className='w-80 border-2 border-black  rounded-sm mb-5' type="text" name="user_name" />
-      </section>
-      <section>
-      <label className='font-bold p-5'>Email</label>
-      <input className='w-80 border-2 border-black  rounded-sm' type="email" name="user_email" />
-      </section>
-      <section>
-      <label className='font-bold p-2'>Message</label>
-      <textarea className='w-80 border-2 border-black mt-5 h-32' name="message" />
-      </section>
-      <section className='pt-5'>
-      <input className='w-44 p-4 bg-red-500 text-white font-bold rounded-sm cursor-pointer' type="submit" value="Send" />
-      </section>
+      
+      <label className='font-bold'>Name </label>
+      <input className='w-full border-b-2   mb-5' type="text" name="user_name" />
+      <br/>
+      
+      <label className='font-bold'>Email </label>
+      <input className='w-full border-b-2 mb-5 ' type="email" name="user_email" />
+      <br/>
+      <label className='font-bold'>Message </label>
+      <textarea className='w-full h-48  border-b-2 mb-5' 
+      name="message" />
+      <br/>
+      <div className='mt-auto'>
+      <input className='w-full p-4 bg-customBlue text-white font-bold  cursor-pointer' 
+      type="submit" value="Send" />
+      </div>
     </form>
-   
+    </div>
   );
 };
