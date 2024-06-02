@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../components/assets/logo/logo.svg'
+import Newsletter from '../components/Newsletter'
 
 function Footer() {
   
@@ -22,12 +23,13 @@ function Footer() {
           <p className='text-2xl text-white'>Leading online marketing expert</p>
         </ul>
         <ul className='leading-10 p-10 lg:p-0'>
-          <Link href="#">
+          
             <li className='text-2xl list-none text-white font-bold font-serif '>Subscribe</li>
-          <p className='w-full max-w-lg text-lg '>Subscribe to our newsletter to stay in touch with the latest</p>
-          <input className='w-full p-2 rounded-sm' placeholder='Email*' />
-          <input className='w-full p-2 rounded-sm bg-customBlue text-white font-bold mt-5' placeholder='Email*' type='submit' />
-          </Link>
+          <p className='w-full max-w-lg text-lg text-white '>Subscribe to our newsletter to stay in touch with the latest</p>
+          {/* <input className='w-full p-2 rounded-sm' placeholder='Email*' />
+          <input className='w-full p-2 rounded-sm bg-customBlue text-white font-bold mt-5'  type='submit' /> */}
+          <Newsletter/>
+       
         </ul>
         
         <ul className='font-serif p-10 lg:p-0'>
