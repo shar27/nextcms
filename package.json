@@ -12,12 +12,10 @@
     "@emailjs/browser": "^3.6.2",
     "contentful": "^9.3.6",
     "daisyui": "^2.20.0",
-    "next": "^10.0.5",
+    "next": "^10.2.3",
     "next-contentful": "^0.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-player": "^2.10.1",
-    "react-reveal": "^1.2.2"
+    "react": "^17.0.2",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
