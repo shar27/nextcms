@@ -9,7 +9,7 @@ function Nav() {
 
   
   return (
-    <div className="flex items-center justify-between border-b border-gray-400  bg-black">
+    <div className="flex items-center justify-between border-b border-white  bg-black z-100">
       <a href="/">
         <Image  src={logo} alt="logo" width={150} height={150} className="w-full max-w-md " />
       </a>
@@ -19,9 +19,9 @@ function Nav() {
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8  bg-white"></span>
+            <span className="block h-0.5 w-8  bg-white"></span>
+            <span className="block h-0.5 w-8  bg-white"></span>
           </div>
 
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
@@ -43,7 +43,7 @@ function Nav() {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN list-none flex flex-col items-center 
-            justify-between min-h-[250px]">
+            justify-between min-h-[250px] ">
               <li className="list-none border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="#about">About</a>
               </li>
@@ -86,7 +86,7 @@ function Nav() {
         top: 0;
         left: 0;
         background: black;
-        z-index: 10;
+        z-index: 11;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
