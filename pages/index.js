@@ -50,7 +50,9 @@ export default function Home({ blogPosts }) {
  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
   <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 ">Leading Online Marketing Experts</h1>
   <p className="text-xl text-gray-300 mb-8">Bringing your dreams one step closer.</p>
+<Link href="/#contact">
 <button className="bg-customBlue text-white p-3 w-44 font-bold text-lg animate-bounce  ">Get a free quote</button>
+</Link>
  </div>
 </div>
 
@@ -191,23 +193,31 @@ className="w-full max-w-lg"
 
 </div>
 
-<div className="relative w-full bg-blend-darken opacity-50 z-0 ">
-<iframe width="100%" height="700" 
-  src="https://www.youtube.com/embed/8ZMxLZqL73M?autoplay=1&loop=1&controls=0&showinfo=0&mute=1&playlist=8ZMxLZqL73M" 
-  title="YouTube video player" frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
+<div className="relative w-full h-screen bg-blend-darken opacity-50 z-0">
+  <iframe
+    className="absolute top-0 left-0 w-full h-full"
+    src="https://www.youtube.com/embed/8ZMxLZqL73M?autoplay=1&loop=1&controls=0&showinfo=0&mute=1&playlist=8ZMxLZqL73M"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+    allowfullscreen
+  ></iframe>
 
-<div className="absolute inset-0 flex flex-col items-center justify-center opacity-100">
-<h3 className="text-3xl lg:text-5xl font-bold bg-black text-white bg-opacity-50 p-4 rounded mb-5 ">Discover the power of the web with our experts.</h3>
+  <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100 h-screen">
+    <h3 className="text-3xl lg:text-5xl font-bold bg-none lg:bg-black text-white bg-opacity-50 p-4 rounded mb-5">
+      Discover the power of the web with our experts.
+    </h3>
 
-<button className="bg-customBlue text-white rounded-sm w-32 p-2 text-xl">Get in touch</button>
+    <button className="bg-customBlue text-white rounded-sm w-32 p-2 text-xl">
+      Get in touch
+    </button>
+  </div>
+
+ 
 </div>
-</div>
-    
-<h3 className="text-3xl lg:text-5xl text-center font-bold p-5 bg-black text-white">Case studies</h3>
-      <div className="grid grid-cols-1 lg:grid-cols-3 p-5 gap-20 bg-black">
+
+<h3 className="text-3xl lg:text-5xl text-center font-bold p-5 bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Case studies</h3>
+      <div className="grid grid-cols-1 lg:grid-cols-3 p-5 gap-20 bg-gradient-to-r from-cyan-500 to-blue-500">
         {blogPosts.map((post) => (
           <div className="shadow-lg p-10 flex flex-col" key={post.sys.id}>
             <h2 className="text-xl lg:text-3xl font-bold text-white p-2 leading-10 uppercase text-center">
@@ -222,7 +232,7 @@ className="w-full max-w-lg"
             
             <div className="mt-auto p-5">
             <Link href={`/posts/${post.fields.slug}`}>
-              <button className="bg-customBlue p-2 rounded-sm w-full h-12">
+              <button className="border border-white p-2 rounded-sm w-full h-12">
                 Read more
               </button>
             </Link>
@@ -233,10 +243,12 @@ className="w-full max-w-lg"
 
        
       </div>
-      <section className="flex justify-center">
-        <ContactForm />
+      <section  id="contact" className="flex justify-center">
+        <ContactForm   />
       </section>
+     
       <Footer />
+     
     </div>
   );
 }
