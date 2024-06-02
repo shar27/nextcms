@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { createClient } from "contentful";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 import Image from "next/image";
@@ -7,12 +6,6 @@ import Nav from "../components/Nav";
 import Link from "next/link";
 import { fetchBlogPosts } from "../lib/contentful";
 
-//assets
-import nike from '../components/assets/nike.png'
-import uber from '../components/assets/uber.png'
-import tesla from '../components/assets/tesla.png'
-import hubspot from '../components/assets/hubspot.png'
-import google from '../components/assets/google.png'
 
 //svg
 import research from '../components/svg/research.svg'
