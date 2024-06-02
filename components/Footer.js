@@ -39,7 +39,7 @@ function Footer() {
            <li className='text-white text-lg list-none'>Stapleton House</li>
             <li className='text-white text-lg list-none'>110-122 Clifton St,</li>
              <li className='text-white text-lg list-none'>London EC2A 4HT</li>
-             <li className='text-white text-lg list-none'>hello@harmonywebsites.co.uk</li>
+             <li className='text-white text-lg list-none'>hello@lome.co.uk</li>
              
           </Link>
         </ul>
