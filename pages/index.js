@@ -48,7 +48,7 @@ export default function Home({ blogPosts }) {
  </div>
 
  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-  <h1 className="text-7xl font-bold leading-tight mb-4 ">Leading Online Marketing Experts</h1>
+  <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 ">Leading Online Marketing Experts</h1>
   <p className="text-xl text-gray-300 mb-8">Bringing your dreams one step closer.</p>
 <button className="bg-customBlue text-white p-3 w-44 font-bold text-lg animate-bounce  ">Get a free quote</button>
  </div>
@@ -192,11 +192,12 @@ className="w-full max-w-lg"
 
 <div className="relative w-full bg-blend-darken opacity-50 z-0 ">
 <iframe width="100%" height="700" 
-src="https://www.youtube.com/embed/OKM7GCSdk6A?si=XLP_ZttBUvD23sA3&autoplay=1&loop=1&autopause=0&muted=1" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; showinfo=0;"
+  src="https://www.youtube.com/embed/8ZMxLZqL73M?autoplay=1&loop=1&controls=0&showinfo=0&mute=1&playlist=8ZMxLZqL73M" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100">
 <h3 className="text-5xl font-bold bg-black text-white bg-opacity-50 p-4 rounded mb-5 ">Discover the power of the web with our experts.</h3>
 
