@@ -11,7 +11,7 @@ export default function ContactUs () {
 
 
     // process.env.YOUR_TEMPLATE_ID
-    emailjs.sendForm('service_h1h55e6', 'template_20q0qxs', form.current, process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY)
+    emailjs.sendForm('service_39bg1xq', 'template_pju0m5e', form.current, '_zvfCNAUf1DOGw6zi')
       .then((result) => {
           console.log(result.text);
           setText('Thank you, your email has been received!')
