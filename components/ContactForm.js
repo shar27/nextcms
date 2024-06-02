@@ -22,10 +22,10 @@ export default function ContactUs () {
 
   return (
    
-<div className='container max-w-xl p-20'>
+<div className='container max-w-xl p-2 lg:p-20'>
     
-    <h3 className='text-5xl text-black font-bold text-center'>Get in touch</h3>
-    <form className='p-5 
+    <h3 className='text-3xl lg:text-5xl text-black font-bold text-center'>Get in touch</h3>
+    <form className='p-2 lg:p-5 
      text-center mt-10 ' ref={form} onSubmit={sendEmail}>
       <p className='text-xl text-red-500 font-bold p-2'>{text}</p>
       
@@ -37,7 +37,7 @@ export default function ContactUs () {
       <input className='w-full border-b-2 mb-5 ' type="email" name="user_email" />
       <br/>
       <label className='font-bold'>Message </label>
-      <textarea className='w-full h-48  border-b-2 mb-5' 
+      <textarea className='w-full h-52  border-b-2 mb-5' 
       name="message" />
       <br/>
       <div className='mt-auto'>

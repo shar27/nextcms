@@ -94,31 +94,31 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
         alt="Research Illustration"
         width={736}
         height={462}
-        className="w-full max-w-md mt-16"
+        className="w-72 lg:w-full max-w-md mt-16"
       />
       <Image
         src={clutch}
         alt="Research Illustration"
         width={736}
         height={462}
-        className="w-full max-w-md mt-16"
+        className="w-72 lg:w-full max-w-md mt-16"
       />
       <Image
         src={theguardian}
         alt="Research Illustration"
         width={736}
         height={462}
-        className="w-full max-w-md mt-16"
+        className="w-72 lg:w-full max-w-md mt-16"
       />
 </div>
 </div>
 
-<h3 className="text-4xl text-black text-center font-bold p-20">Our process</h3>
-<div className="grid grid-cols-1 lg:grid-cols-2  p-5">
+<h3 className="text-2xl lg:text-4xl text-black text-center font-bold p-20">Our process</h3>
+<div className="grid grid-cols-1 lg:grid-cols-2  p-5 bg-white">
 <div className="w-full max-w-lg">
-  <h2 className="text-3xl mb-5">Step 1 - Research phase</h2>
+  <h2 className="text-2xl lg:text-3xl mb-5">Step 1 - Research phase</h2>
 
-  <p className="text-2xl leading-loose ">We conduct a thorough market analysis to understand your industry, competitors, and target audience. This includes identifying the needs, preferences, and behaviors of your potential customers, 
+  <p className="text-xl lg:text-2xl leading-loose ">We conduct a thorough market analysis to understand your industry, competitors, and target audience. This includes identifying the needs, preferences, and behaviors of your potential customers, 
     as well as spotting current market trends and opportunities for your business to capitalize on.</p>
 </div>
 <div className="flex flex-col justify-self-end">
@@ -135,7 +135,7 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
 
 <div className="grid grid-cols-1 lg:grid-cols-2 p-5">
 
-
+<h2 className="text-2xl lg:text-3xl mb-5 block lg:hidden">Step 2 - Design phase</h2>
 <div className="flex flex-col justify-self-start">
 <Image
 src={design}
@@ -145,9 +145,9 @@ className="w-full max-w-lg"
 />
 </div>
 <div className="w-full max-w-lg">
-  <h2 className="text-3xl mb-5 ">Step 2 - Design phase</h2>
+  <h2 className="text-2xl lg:text-3xl mb-5 hidden lg:block">Step 2 - Design phase</h2>
  
-  <p className="text-2xl leading-loose ">Next, we move to the design phase. Our team crafts unique and visually appealing design concepts that resonate with your brand. We focus on ensuring seamless navigation and an 
+  <p className="text-xl lg:text-2xl leading-loose ">Next, we move to the design phase. Our team crafts unique and visually appealing design concepts that resonate with your brand. We focus on ensuring seamless navigation and an 
     engaging user experience, making sure your website looks stunning on all devices, from desktops to mobiles.</p>
 </div>
 
@@ -156,8 +156,8 @@ className="w-full max-w-lg"
 
 <div className="grid grid-cols-1 lg:grid-cols-2 p-5">
 <div className="w-full max-w-lg">
-  <h2 className="text-3xl mb-5 ">Step 3 - Develop phase</h2>
-  <p className="text-2xl leading-loose ">In the development stage, we build a robust, fast, and secure website tailored to your specifications. We integrate easy-to-use content management systems for effortless 
+  <h2 className="text-2xl lg:text-3xl mb-5 ">Step 3 - Develop phase</h2>
+  <p className="text-xl lg:text-2xl leading-loose ">In the development stage, we build a robust, fast, and secure website tailored to your specifications. We integrate easy-to-use content management systems for effortless 
     updates and implement best practices for SEO optimization to enhance your search engine visibility.</p>
 </div>
 <div className="flex flex-col justify-self-end">
@@ -173,6 +173,7 @@ className="w-full max-w-lg"
 <div className="grid grid-cols-1 lg:grid-cols-2 p-5">
 
 <div className="flex flex-col justify-self-start">
+<h2 className="text-2xl lg:text-3xl mb-5 block lg:hidden">Step 4 - Execute strategy</h2>
 <Image
 src={marketing}
 width={500}
@@ -182,9 +183,9 @@ className="w-full max-w-lg"
 </div>
 
 <div className="w-full max-w-lg">
-  <h2 className="text-3xl mb-5 ">Step 4 - Execute strategy</h2>
+  <h2 className="text-3xl mb-5 hidden lg:block">Step 4 - Execute strategy</h2>
   
-  <p className="text-2xl leading-loose ">Finally, we execute a comprehensive marketing strategy. We develop a detailed campaign plan to drive traffic and conversions, strategically placing ads across various platforms to maximize reach and engagement. Our team continuously monitors 
+  <p className="text-xl lg:text-2xl leading-loose ">Finally, we execute a comprehensive marketing strategy. We develop a detailed campaign plan to drive traffic and conversions, strategically placing ads across various platforms to maximize reach and engagement. Our team continuously monitors 
     and adjusts campaigns to ensure optimal results, ensuring your business achieves its marketing goals.</p>
 </div>
 
@@ -199,17 +200,17 @@ className="w-full max-w-lg"
 </iframe>
 
 <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100">
-<h3 className="text-5xl font-bold bg-black text-white bg-opacity-50 p-4 rounded mb-5 ">Discover the power of the web with our experts.</h3>
+<h3 className="text-3xl lg:text-5xl font-bold bg-black text-white bg-opacity-50 p-4 rounded mb-5 ">Discover the power of the web with our experts.</h3>
 
 <button className="bg-customBlue text-white rounded-sm w-32 p-2 text-xl">Get in touch</button>
 </div>
 </div>
     
-<h3 className="text-5xl text-center font-bold p-5 bg-black text-white">Case studies</h3>
+<h3 className="text-3xl lg:text-5xl text-center font-bold p-5 bg-black text-white">Case studies</h3>
       <div className="grid grid-cols-1 lg:grid-cols-3 p-5 gap-20 bg-black">
         {blogPosts.map((post) => (
           <div className="shadow-lg p-10 flex flex-col" key={post.sys.id}>
-            <h2 className="text-3xl font-bold text-white p-2 leading-10 uppercase text-center">
+            <h2 className="text-xl lg:text-3xl font-bold text-white p-2 leading-10 uppercase text-center">
               {post.fields.title}
             </h2>
             <Image
