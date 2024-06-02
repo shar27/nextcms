@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
@@ -15,6 +16,7 @@ import marketing from '../components/svg/marketing.svg'
 import clutch from '../components/svg/clutch.svg'
 import theguardian from '../components/svg/theguardian.svg'
 import awwards from '../components/svg/awwards.svg'
+import { useState, useEffect } from "react";
 
 
 
@@ -29,6 +31,32 @@ export const getStaticProps = async () => {
 };
 
 export default function Home({ blogPosts }) {
+  
+  
+  const [showArrow, setShowArrow] = useState(false)
+
+  useEffect(()=> {
+    const handleScroll = () => {
+      if (window.scrollY > 150){
+        setShowArrow(true);
+      }else{
+        setShowArrow(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    };
+  }, []);
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  
   return (
     <div className=" font-serif ">
       <Head>
@@ -114,7 +142,13 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
       />
 </div>
 </div>
-
+{showArrow && (
+        <button onClick={scrollToTop} className="fixed bottom-4 right-4 bg-gray-800 text-white p-2 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+      )}
 <h3 className="text-2xl lg:text-4xl text-black text-center font-bold p-20">Our process</h3>
 <div className="grid grid-cols-1 lg:grid-cols-2  p-5 bg-white text-black">
 <div className="w-full max-w-lg">
