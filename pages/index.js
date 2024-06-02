@@ -35,8 +35,7 @@ export default function Home({ blogPosts }) {
         <title>Marketing Agency </title>
         <meta
           name="description"
-          content="Get the best value on used motorcycles and enjoy the 
-      thrill of riding the motorcycle of your choice without the high cost of ownership."
+          content="London Marketing Agency & Websites"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
