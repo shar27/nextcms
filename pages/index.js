@@ -242,7 +242,7 @@ className="w-full max-w-lg"
       Discover the power of the web with our experts.
     </h3>
 
-    <button className="bg-customBlue text-white rounded-sm w-32 p-2 text-xl">
+    <button className="bg-customBlue text-white rounded-sm w-48 lg:w-32 p-2 text-xl">
       Get in touch
     </button>
   </div>
