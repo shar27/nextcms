@@ -20,7 +20,7 @@ function Footer() {
           className='w-full max-w-md h-32'
           />
           </Link>
-          <p className='text-2xl text-white'>Leading online marketing expert</p>
+          <p className='text-2xl text-white'>Leading Online Marketing Expert</p>
         </ul>
         <ul className='leading-10 p-10 lg:p-0'>
           
