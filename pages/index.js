@@ -5,6 +5,8 @@ import ContactForm from "../components/ContactForm";
 import Image from "next/image";
 import Nav from "../components/Nav";
 import Link from "next/link";
+
+//
 import { fetchBlogPosts } from "../lib/contentful";
 
 
@@ -149,7 +151,10 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
           </svg>
         </button>
       )}
+
+     
       <div className="p-5 lg:p-20 mt-20 lg:mt-auto">
+      
 <h3 className="text-2xl lg:text-4xl text-black text-center font-bold ">Our process</h3>
 </div>
 <div className="grid grid-cols-1 lg:grid-cols-2  p-5 bg-white text-black">

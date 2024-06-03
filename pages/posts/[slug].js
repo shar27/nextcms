@@ -46,10 +46,10 @@ export default function Post({ post }) {
       <h1 className='text-5xl text-center p-5'>{title}</h1>
       
       <Image 
-      className='w-full h-screen'
-         width={100}
+      className=''
+         width={300}
          height={100}
-         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        
           src={'https:' + post.fields.featured.fields.file.url}
           />
           
