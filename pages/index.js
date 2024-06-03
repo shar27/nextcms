@@ -169,7 +169,7 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
 </div>
 
 
-<div className="grid grid-cols-1 lg:grid-cols-2 p-5">
+<div className="grid grid-cols-1 lg:grid-cols-2 bg-white text-black p-5">
 
 <h2 className="text-2xl lg:text-3xl mb-5 block lg:hidden">Step 2 - Design phase</h2>
 <div className="flex flex-col justify-self-start">
@@ -190,7 +190,7 @@ className="w-full max-w-lg"
 </div>
 
 
-<div className="grid grid-cols-1 lg:grid-cols-2 p-5">
+<div className="grid grid-cols-1 lg:grid-cols-2 p-5 bg-white text-black">
 <div className="w-full max-w-lg">
   <h2 className="text-2xl lg:text-3xl mb-5 ">Step 3 - Develop phase</h2>
   <p className="text-xl lg:text-2xl leading-loose ">In the development stage, we build a robust, fast, and secure website tailored to your specifications. We integrate easy-to-use content management systems for effortless 
@@ -206,7 +206,7 @@ className="w-full max-w-lg"
 </div>
 </div>
 
-<div className="grid grid-cols-1 lg:grid-cols-2 p-5">
+<div className="grid grid-cols-1 lg:grid-cols-2 p-5 bg-white text-black">
 
 <div className="flex flex-col justify-self-start">
 <h2 className="text-2xl lg:text-3xl mb-5 block lg:hidden">Step 4 - Execute strategy</h2>
@@ -238,7 +238,7 @@ className="w-full max-w-lg"
   ></iframe>
 
   <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100 h-screen">
-    <h3 className="text-3xl lg:text-5xl font-bold bg-none lg:bg-black text-white  p-4 rounded mb-5">
+    <h3 className="text-3xl lg:text-5xl font-bold bg-none lg:bg-black text-white p-4 rounded mb-5">
       Discover the power of the web with our experts.
     </h3>
 
