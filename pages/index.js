@@ -149,7 +149,9 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
           </svg>
         </button>
       )}
-<h3 className="text-2xl lg:text-4xl text-black text-center font-bold p-5 lg:p-20 mt-auto">Our process</h3>
+      <div className="p-5 lg:p-20 mt-20 lg:mt-auto">
+<h3 className="text-2xl lg:text-4xl text-black text-center font-bold ">Our process</h3>
+</div>
 <div className="grid grid-cols-1 lg:grid-cols-2  p-5 bg-white text-black">
 <div className="w-full max-w-lg">
   <h2 className="text-2xl lg:text-3xl mb-5">Step 1 - Research phase</h2>
