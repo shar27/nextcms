@@ -45,11 +45,14 @@ function Nav() {
             <ul className="MENU-LINK-MOBILE-OPEN list-none flex flex-col items-center 
             justify-between min-h-[250px] ">
               <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="#about">About</a>
+                <a className="list-none text-white" href="/about">About</a>
               </li>
              
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="#services">Services</a>
+                <a className="list-none text-white" href="/services">Services</a>
+              </li>
+              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-white" href="#casestudies">Case Studies</a>
               </li>
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="#contact">Contact</a>
@@ -60,13 +63,13 @@ function Nav() {
 
         <ul className="DESKTOP-MENU hidden lg:flex justify-between text-xl ">
           <li className="list-none p-2">
-            <a href="#about">About</a>
+            <a href="/about">About</a>
           </li>
           <li className="list-none p-2">
-            <a href="#services">Services</a>
+            <a href="/services">Services</a>
           </li>
           <li className="list-none p-2">
-            <a href="#services">Work</a>
+            <a href="#casestudies">Work</a>
           </li>
         
           <li className="list-none p-2">
