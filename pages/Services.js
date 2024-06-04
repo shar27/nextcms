@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, ContactForm, Footer, lome} from './Imports'
+import {Nav, ContactForm, Footer, lome} from '../components/Imports'
 import Head from 'next/head'
 import Gif from '../components/assets/gif/res-designs.gif'
 import Image from 'next/image'
