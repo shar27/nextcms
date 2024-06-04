@@ -23,7 +23,7 @@ function Services() {
       </Head>
       <Nav />
 
-      <div className="bg-black grid grid-cols-1 lg:grid-cols-2 w-full h-screen p-20">
+      <div className="bg-black grid grid-cols-1 lg:grid-cols-2 w-full h-screen p-0 lg:p-20">
         
       <div className="flex flex-col p-4">
           <h3 className="text-3xl lg:text-9xl font-bold  text-white rounded mb-5">
@@ -36,7 +36,7 @@ function Services() {
         </div>
         <div>
         <Image
-          className="w-full h-96"
+          className="w-full h-64 lg:h-96"
           src={Gif}
           width={300}
           height={500}
@@ -45,7 +45,7 @@ function Services() {
        
       </div>
 
-<div className="grid grid-cols-1 lg:grid-cols-2 p-10 gap-0 lg:gap-72">
+<div className="grid grid-cols-1 lg:grid-cols-2 p-10 gap-0 lg:gap-72 bg-white text-black">
       <div className="">
         <h3 className="text-2xl lg:text-3xl font-bold">Technology</h3>
 

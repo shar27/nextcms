@@ -2,10 +2,9 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { ContactForm, Footer, Nav } from "../components/Imports";
+import { ContactForm, Footer, Nav, lome } from "../components/Imports";
 
-//assets
-import lome from "../components/svg/lome.svg";
+
 
 function About() {
   return (
@@ -26,7 +25,7 @@ function About() {
         />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100 h-screen">
-          <h3 className="text-3xl lg:text-5xl font-bold bg-none lg:bg-black text-white p-4 rounded mb-5">
+          <h3 className="text-3xl lg:text-5xl font-bold bg-black text-white p-4 rounded mb-5">
             Our Story.
           </h3>
 
