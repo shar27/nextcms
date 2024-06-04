@@ -66,7 +66,7 @@ function Nav() {
             <a href="/about">About</a>
           </li>
           <li className="list-none p-2">
-            <a href="/services">Services</a>
+            <a href="/Services">Services</a>
           </li>
           <li className="list-none p-2">
             <a href="#casestudies">Work</a>
