@@ -45,11 +45,11 @@ function Nav() {
             <ul className="MENU-LINK-MOBILE-OPEN list-none flex flex-col items-center 
             justify-between min-h-[250px] ">
               <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="/about">About</a>
+                <a className="list-none text-white" href="/About">About</a>
               </li>
              
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="/services">Services</a>
+                <a className="list-none text-white" href="/Services">Services</a>
               </li>
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="#casestudies">Case Studies</a>
