@@ -63,7 +63,7 @@ function Nav() {
 
         <ul className="DESKTOP-MENU hidden lg:flex justify-between text-xl ">
           <li className="list-none p-2">
-            <a href="/about">About</a>
+            <a href="/About">About</a>
           </li>
           <li className="list-none p-2">
             <a href="/Services">Services</a>

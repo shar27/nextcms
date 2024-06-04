@@ -1,10 +1,8 @@
 import React from "react";
-import Nav from "../components/Nav";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import ContactUs from "../components/ContactForm";
-import Footer from "../components/Footer";
+import { ContactForm, Footer, Nav } from "../components/Imports";
 
 //assets
 import lome from "../components/svg/lome.svg";
@@ -67,7 +65,7 @@ function About() {
       </div>
       </div>
       <section className="flex justify-center">
-      <ContactUs/>
+      <ContactForm/>
      
       </section>
       <Footer/>
