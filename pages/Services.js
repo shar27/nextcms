@@ -72,10 +72,11 @@ function Services() {
   </div>
        
       </div>
-
-<div className="grid grid-cols-1 lg:grid-cols-2 p-10 gap-0 lg:gap-72 bg-black text-white">
+      <h3 className="text-3xl lg:text-7xl font-bold bg-black text-white text-center">Technology</h3>
+<div className="grid grid-cols-1 lg:grid-cols-2 
+p-20 gap-0 lg:gap-72 bg-black text-white">
       <div className="">
-        <h3 className="text-2xl lg:text-3xl font-bold">Technology</h3>
+      
 
         <p className="text-xl lg:text-2xl leading-10">
           We are a dynamic and inclusive collective of digital aficionados. Our
@@ -87,7 +88,7 @@ function Services() {
         </p>
       </div>
 
-<div>
+<div className=''>
       {divs.map(({ id, title, content, isShowing }) => (
         <div key={id}>
           <button
