@@ -74,7 +74,7 @@ function Services() {
       </div>
       <h3 className="text-3xl lg:text-7xl font-bold bg-black text-white text-center">Technology</h3>
 <div className="grid grid-cols-1 lg:grid-cols-2 
-p-20 gap-0 lg:gap-72 bg-black text-white">
+p-10 lg:p-20 gap-0 lg:gap-72 bg-black text-white">
       <div className="">
       
 
@@ -88,7 +88,7 @@ p-20 gap-0 lg:gap-72 bg-black text-white">
         </p>
       </div>
 
-<div className=''>
+<div className='p-5 leading-10'>
       {divs.map(({ id, title, content, isShowing }) => (
         <div key={id}>
           <button
