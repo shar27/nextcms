@@ -259,7 +259,7 @@ className="w-full max-w-lg"
  
 </div>
 
-<h3 className="text-3xl lg:text-5xl text-center font-bold p-5 bg-white text-black">Case studies</h3>
+<h3 id="casestudies" className="text-3xl lg:text-5xl text-center font-bold p-5 bg-white text-black">Case studies</h3>
       <div className="grid grid-cols-1 lg:grid-cols-3 p-5 gap-20 bg-white text-black">
         {blogPosts.map((post) => (
           <div className="shadow-lg p-10 flex flex-col" key={post.sys.id}>
