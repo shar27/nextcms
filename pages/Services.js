@@ -7,15 +7,43 @@ import { useState } from 'react'
 
 function Services() {
  
-  const [isShow, setIsNotShowing] = useState(false)
-  
-  const toggleSection = () => [
-    setIsNotShowing(!isShow)
-  ]
-  
+  const [divs, setDivs] = useState([
+    {
+      id: 1,
+      title: "Websites",
+      content: "We start by understanding your business goals and target audience to create a strategic plan. Our creative team designs a user-friendly and aesthetically pleasing website tailored to your brand. We build your website with the latest technologies, ensuring it is fast, secure, and responsive. Finally, we launch your website and provide ongoing support to keep it running smoothly.",
+      isShowing: false,
+    },
+    {
+      id: 2,
+      title: "Marketing",
+      content: "We start by understanding your business goals and target audience to develop a customized marketing strategy. Our creative team then crafts compelling campaigns and engaging content to capture your audience’s attention. We implement these strategies across multiple channels, ensuring optimal reach and engagement. Finally, we analyze the results and provide detailed reports, continuously refining our approach for maximum effectiveness.",
+      isShowing: false,
+    },
+    {
+      id: 3,
+      title: "Hosting",
+      content: "We start by assessing your website’s requirements to provide tailored hosting solutions that meet your specific needs. Our team then sets up and configures your hosting environment to ensure optimal performance and security. We migrate your website to our servers seamlessly, minimizing downtime and ensuring a smooth transition. Finally, we offer ongoing monitoring and support to keep your website running reliably and efficiently.",
+      isShowing: false,
+    },
+    {
+      id: 4,
+      title: "Analytics",
+      content: "We begin by identifying key performance indicators (KPIs) aligned with your business objectives. Our team then implements robust analytics tools to track website traffic, user behavior, and conversion metrics. We analyze the data collected to gain valuable insights into your audience's preferences and behaviors. Finally, we provide comprehensive reports and recommendations to optimize your marketing efforts and drive continuous improvement.",
+      isShowing: false,
+    },
+  ]);
+
+  const toggleDiv = (id) => {
+    setDivs((prevDivs) =>
+      prevDivs.map((div) =>
+        div.id === id ? { ...div, isShowing: !div.isShowing } : div
+      )
+    );
+  };
   
   return (
-    <div>
+    <div className=''>
       <Head>
         <title>Marketing Agency </title>
         <meta name="description" content="London Marketing Agency & Websites" />
@@ -45,7 +73,7 @@ function Services() {
        
       </div>
 
-<div className="grid grid-cols-1 lg:grid-cols-2 p-10 gap-0 lg:gap-72 bg-white text-black">
+<div className="grid grid-cols-1 lg:grid-cols-2 p-10 gap-0 lg:gap-72 bg-black text-white">
       <div className="">
         <h3 className="text-2xl lg:text-3xl font-bold">Technology</h3>
 
@@ -58,48 +86,25 @@ function Services() {
           
         </p>
       </div>
-      <div className='font-bold p-0 lg:p-10 leading-10'>
-       
-          <button onClick={toggleSection} className='border-b-2 w-full text-left'>Websites 
-          {isShow ? '-' : '  +  '}
+
+<div>
+      {divs.map(({ id, title, content, isShowing }) => (
+        <div key={id}>
+          <button
+            onClick={() => toggleDiv(id)}
+            className='border-b-2 w-full text-left'
+          >
+            {title}
+            {isShowing ? '-' : ' + '}
           </button>
-          {isShow && (
-        <div className="mt-4 p-4 border border-gray-300 rounded">
-          <p>Here is some more information that you can show or hide.</p>
-          <p>You can add more content here as needed.</p>
+          {isShowing && (
+            <div className="mt-4 p-4 border border-gray-300 rounded">
+              <p>{content}</p>
+              <p>You can add more content here as needed.</p>
+            </div>
+          )}
         </div>
-      )}
-          <br/>
-          <button onClick={toggleSection} className='border-b-2 w-full text-left'>Marketing 
-          {isShow ? '-' : '  +  '}
-          </button>
-          {isShow && (
-        <div className="mt-4 p-4 border border-gray-300 rounded">
-          <p>Here is some more information that you can show or hide.</p>
-          <p>You can add more content here as needed.</p>
-        </div>
-      )}
-          <br/>
-          <button onClick={toggleSection} className='border-b-2 w-full text-left'>Analytics 
-          {isShow ? '-' : '  +  '}
-          </button>
-          {isShow && (
-        <div className="mt-4 p-4 border border-gray-300 rounded">
-          <p>Here is some more information that you can show or hide.</p>
-          <p>You can add more content here as needed.</p>
-        </div>
-      )}
-          <br/>
-          <button onClick={toggleSection} className='border-b-2 w-full text-left'>Hosting 
-          {isShow ? '-' : '  +  '}
-          </button>
-          {isShow && (
-        <div className="mt-4 p-4 border border-gray-300 rounded">
-          <p>Here is some more information that you can show or hide.</p>
-          <p>You can add more content here as needed.</p>
-        </div>
-      )}
-       
+      ))}
       </div>
       </div>
 
