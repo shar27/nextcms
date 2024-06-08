@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 
-const GA_TRACKING_ID = process.env.GA_TRACKING_ID; // Replace with your Measurement ID
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;; // Replace with your Measurement ID
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -40,6 +40,7 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
+      
       <Component {...pageProps} />
     </>
   );
