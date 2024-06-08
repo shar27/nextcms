@@ -21,7 +21,36 @@ const Sitemap = () => {
         <lastmod>2024-06-08T21:34:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
-    <!-- Add more URLs here -->
+    <url>
+        <loc>https://www.webdesignhighwycombe.co.uk/Services</loc>
+        <lastmod>2024-06-08T21:34:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.webdesignhighwycombe.co.uk/posts/house-clearance-wales</loc>
+        <lastmod>2024-06-08T21:34:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.webdesignhighwycombe.co.uk/posts/house%20of%20computers</loc>
+        <lastmod>2024-06-08T21:34:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.webdesignhighwycombe.co.uk/posts/london-cleaning-services</loc>
+        <lastmod>2024-06-08T21:34:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.webdesignhighwycombe.co.uk/posts/the%20hive</loc>
+        <lastmod>2024-06-08T21:34:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.webdesignhighwycombe.co.uk/Terms</loc>
+        <lastmod>2024-06-08T21:34:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
 
 </urlset>`;
 
