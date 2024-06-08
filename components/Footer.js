@@ -20,7 +20,7 @@ function Footer() {
           className='w-full max-w-md h-32'
           />
           </Link>
-          <p className='text-2xl text-white'>Leading Online Marketing Expert</p>
+          <p className='text-2xl text-white'>Web Design High Wycombe</p>
         </ul>
         <ul className='leading-10 p-10 lg:p-0'>
           
@@ -34,12 +34,13 @@ function Footer() {
         
         <ul className='font-serif p-10 lg:p-0'>
           <Link href="#">
-            <li className='text-2xl list-none text-white font-bold'>LOME Websites</li>
+            <li className='text-2xl list-none text-white font-bold'>Web Design High Wycombe</li>
           <li className='text-white text-lg list-none'>220, The Old Dairy</li>
            <li className='text-white text-lg list-none'>Stapleton House</li>
             <li className='text-white text-lg list-none'>110-122 Clifton St,</li>
              <li className='text-white text-lg list-none'>London EC2A 4HT</li>
-             <li className='text-white text-lg list-none'>hello@lome.co.uk</li>
+             <li className='text-white text-lg list-none'>📞 0333 360 6113</li>
+             <li className='text-white text-lg list-none'>📧 hello@webdesignhighwycombe.co.uk</li>
              
           </Link>
         </ul>

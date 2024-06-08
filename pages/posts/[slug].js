@@ -4,6 +4,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Head from 'next/head';
 import Image from 'next/image';
 import Nav from '../../components/Nav';
+import Footer from '../../components/Footer';
 
 export const getStaticPaths = async () => {
   const blogPosts = await fetchBlogPosts();
@@ -39,7 +40,7 @@ export const getStaticProps = async (context) => {
 
 
 export default function Post({ post }) {
-  const { title, content, author, published } = post.fields;
+  const { title, content } = post.fields;
   
 
 
@@ -73,30 +74,26 @@ console.log(imageUrl);
 
       <h1 className='text-5xl text-center p-5 uppercase'>{title}</h1>
       
-      <div className='w-full'>
+      <div className='relative w-full h-screen'>
       <Image 
-      className='w-full h-screen'
-         width={500}
-         height={500}
-        
-          src={'https:' + post.fields.featured.fields.file.url}
-          />
-         </div> 
+        className='object-cover'
+        layout='fill'
+        src={'https:' + post.fields.featured.fields.file.url + '?w=1600&h=800&fm=jpg&q=80'}
+        alt='The Hive'
+      />
+    </div>
       <div className='p-5 lg:p-20 container leading-10 font-sans flex flex-col mt-auto '>
         {documentToReactComponents(content)}</div>
+      <div className='relative w-full h-screen'>
       <Image 
-      className='w-full h-screen'
-         width={500}
-         height={500}
+        className='object-cover'
+        layout='fill'
+        
         
           src={'https:' + imageUrl}
           />
-        <div className='font-bold p-5 text-2xl uppercase'>{author}</div>
-        <div className='font-bold p-5 text-2xl'>{new Date(published).toLocaleDateString('en-GB', {
-          year: 'numeric',
-          month: 'short',
-          day: 'numeric'
-        })}</div>
+      </div>
+      <Footer/>
     </div>
   );
 }

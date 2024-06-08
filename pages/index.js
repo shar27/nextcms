@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 //components
-import {Nav, ContactForm, Footer, lome} from '../components/Imports'
+import {Nav, ContactForm, Footer, lome, TopHeader} from '../components/Imports'
 
 //blogposts
 import { fetchBlogPosts } from "../lib/contentful";
@@ -64,14 +64,23 @@ export default function Home({ blogPosts }) {
   return (
     <div className=" font-serif ">
       <Head>
-        <title>Marketing Agency </title>
+        <title>High Wycombe Web Design</title>
         <meta
           name="description"
           content="London Marketing Agency & Websites"
         />
+        <meta name="description" content="Looking for expert web design in High Wycombe? Our local web development company specializes in responsive and ecommerce web design tailored to small businesses. Enhance your online presence with our professional website designers and digital marketing services. 
+        Get in touch for SEO services in High Wycombe to boost your visibility and drive traffic to your site."></meta>
+
+<meta property="og:description" content="High Wycombe web design agency offers comprehensive web development and SEO services. Our specialists provide custom web design for local businesses, ensuring a responsive, user-friendly experience. Partner with us for expert digital marketing, local SEO, and ecommerce solutions. 
+Contact us today to elevate your online strategy and achieve your business goals."></meta>
+      
+
+        <meta property="og:description" content="Get responsive, stunning and super fast websites designed by the best web design company High Wycombe. 
+        Need attractive web design in High Wycombe at an affordable price? Call us today for your free quote!"></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+    <TopHeader/>
       <Nav />
 
       <div className="relative bg-black h-screen text-white overflow-hidden">
@@ -80,7 +89,8 @@ export default function Home({ blogPosts }) {
  </div>
 
  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-  <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 ">Leading Online Marketing Experts</h1>
+  <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 ">Web Design High Wycombe 
+    <br/>Leading Online Marketing Experts</h1>
   <p className="text-xl text-gray-300 mb-8">Bringing your dreams one step closer.</p>
 <Link href="/#contact">
 <button className="bg-customBlue text-white p-3 w-44 font-bold text-lg animate-bounce  ">Get a free quote</button>
@@ -109,8 +119,8 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
 <h3 className="text-5xl mt-5">Results orientated.</h3>
 <h3 className="text-5xl mt-5 text-nowrap">Best in house team (no-outsourcing).</h3>
 <h3 className="text-5xl mt-5">We bring your vision to life.</h3>
-<h4 className="text-lg mt-5">LOME is a London-based digital agency. We guarantee results across 
-  three key business areas: web design & build, social media & digital marketing, and creative content.</h4>
+<h4 className="text-lg mt-5">LOME is a High Wycombe Web design agency. We guarantee results across 
+  three key business areas: web design & build, social media & digital marketing</h4>
 
 <section className="flex items-center mt-5">
   <Link href="#" className="flex items-center">
@@ -123,7 +133,7 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
 </div>
 {/* col 2 */}
 <div className="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col items-center justify-center md:justify-self-center lg:justify-self-end">
-<Image
+{/* <Image
         src={awwards}
         alt="Research Illustration"
         width={736}
@@ -143,7 +153,7 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
         width={736}
         height={462}
         className="w-72 lg:w-full max-w-md mt-16"
-      />
+      /> */}
 </div>
 </div>
 {showArrow && (
@@ -157,7 +167,7 @@ h-20 text-xl lg:text-3xl p-5 font-bold">
      
       <div className="p-5 lg:p-20 mt-20 lg:mt-auto">
       
-<h3 className="text-2xl lg:text-4xl text-black text-center font-bold ">Our process</h3>
+<h3 className="text-2xl lg:text-4xl text-black text-center font-bold ">Our Process</h3>
 </div>
 <div className="grid grid-cols-1 lg:grid-cols-2  p-5 bg-white text-black">
 <div className="w-full max-w-lg">
@@ -248,7 +258,7 @@ className="w-full max-w-lg"
 
   <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100 h-screen">
     <h3 className="text-3xl lg:text-5xl font-bold bg-none lg:bg-black text-white p-4 rounded mb-5">
-      Discover the power of the web with our experts.
+      Discover The Power Of The Web With Our Experts.
     </h3>
 
     <button className="bg-customBlue text-white rounded-sm w-48 lg:w-32 p-2 text-xl">

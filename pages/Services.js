@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, ContactForm, Footer, lome} from '../components/Imports.js'
+import {Nav, ContactForm, Footer, lome, TopHeader} from '../components/Imports.js'
 import Head from 'next/head'
 import Gif from '../components/assets/gif/res-designs.gif'
 import Image from 'next/image'
@@ -45,10 +45,11 @@ function Services() {
   return (
     <div className=''>
       <Head>
-        <title>Marketing Agency </title>
+        <title>Web Design High Wycombe </title>
         <meta name="description" content="London Marketing Agency & Websites" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <TopHeader/>
       <Nav />
 
       <div className="bg-black grid grid-cols-1 lg:grid-cols-2 w-full h-screen p-0 lg:p-20">

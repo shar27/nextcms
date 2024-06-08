@@ -73,7 +73,7 @@ function Nav() {
           </li>
         
           <li className="list-none p-2">
-            <a href="#contact">Contact</a>
+            <a href="/#contact">Contact</a>
           </li>
         </ul>
       </nav>
