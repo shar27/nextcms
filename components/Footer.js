@@ -53,7 +53,7 @@ function Footer() {
         
         <li className='p-2'><Link href="#" className=''>Privacy Policy</Link></li>
         <li className='p-2'><Link href="#" className=''>@ Copyright {currentYear}</Link></li>
-        <li className='p-2'><Link href="#" className=''>Terms and conditions</Link></li>
+      <li className='p-2'><Link href="/Terms" className=''>Terms and conditions</Link></li>
         </ul>
         
     </footer>
