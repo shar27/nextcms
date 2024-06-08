@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function TopHeader() {
   return (
-    <div className="w-full bg-black text-white font-bold flex justify-between p-2 text-xl">
+    <div className="w-full bg-black text-white font-bold flex flex-col lg:flex-row justify-center lg:justify-between p-2 text-xl">
        
       <Link href="mailto:hello@webdesignhighwycombe.co.uk">
  
