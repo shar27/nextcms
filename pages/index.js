@@ -67,7 +67,7 @@ export default function Home({ blogPosts }) {
         <title>High Wycombe Web Design</title>
         <meta
           name="description"
-          content="London Marketing Agency & Websites"
+          content="Web Design High Wycombe"
         />
         <meta name="description" content="Looking for expert web design in High Wycombe? Our local web development company specializes in responsive and ecommerce web design tailored to small businesses. Enhance your online presence with our professional website designers and digital marketing services. 
         Get in touch for SEO services in High Wycombe to boost your visibility and drive traffic to your site."></meta>
@@ -76,8 +76,7 @@ export default function Home({ blogPosts }) {
 Contact us today to elevate your online strategy and achieve your business goals."></meta>
       
 
-        <meta property="og:description" content="Get responsive, stunning and super fast websites designed by the best web design company High Wycombe. 
-        Need attractive web design in High Wycombe at an affordable price? Call us today for your free quote!"></meta>
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <TopHeader/>
