@@ -65,19 +65,8 @@ export default function Home({ blogPosts }) {
     <div className=" font-serif ">
       <Head>
         <title>High Wycombe Web Design</title>
-        <meta
-          name="description"
-          content="Web Design High Wycombe"
-        />
-        <meta name="description" content="Looking for expert web design in High Wycombe? Our local web development company specializes in responsive and ecommerce web design tailored to small businesses. Enhance your online presence with our professional website designers and digital marketing services. 
-        Get in touch for SEO services in High Wycombe to boost your visibility and drive traffic to your site."></meta>
-
-<meta property="og:description" content="High Wycombe web design agency offers comprehensive web development and SEO services. Our specialists provide custom web design for local businesses, ensuring a responsive, user-friendly experience. Partner with us for expert digital marketing, local SEO, and ecommerce solutions. 
-Contact us today to elevate your online strategy and achieve your business goals."></meta>
+       
       
-
-        
-        <link rel="icon" href="/favicon.ico" />
       </Head>
     <TopHeader/>
       <Nav />

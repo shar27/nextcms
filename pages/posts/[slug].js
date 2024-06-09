@@ -69,6 +69,7 @@ console.log(imageUrl);
     <div>
       <Head>
         <title>{title}</title>
+      
       </Head>
 <Nav/>
 

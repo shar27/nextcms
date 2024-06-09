@@ -47,16 +47,7 @@ function Services() {
       <Head>
         <title>Web Design High Wycombe </title>
         
-        <meta
-          name="description"
-          content="Web Design High Wycombe"
-        />
-        <meta name="description" content="Looking for expert web design in High Wycombe? Our local web development company specializes in responsive and ecommerce web design tailored to small businesses. Enhance your online presence with our professional website designers and digital marketing services. 
-        Get in touch for SEO services in High Wycombe to boost your visibility and drive traffic to your site."></meta>
-
-<meta property="og:description" content="High Wycombe web design agency offers comprehensive web development and SEO services. Our specialists provide custom web design for local businesses, ensuring a responsive, user-friendly experience. Partner with us for expert digital marketing, local SEO, and ecommerce solutions. 
-Contact us today to elevate your online strategy and achieve your business goals."></meta>
-        <link rel="icon" href="/favicon.ico" />
+   
       </Head>
       <TopHeader/>
       <Nav />
@@ -64,9 +55,9 @@ Contact us today to elevate your online strategy and achieve your business goals
       <div className="bg-black grid grid-cols-1 lg:grid-cols-2 w-full h-screen p-0 lg:p-20">
         
       <div className="flex flex-col p-4">
-          <h3 className="text-3xl lg:text-9xl font-bold  text-white rounded mb-5">
+          <h1 className="text-3xl lg:text-9xl font-bold  text-white rounded mb-5">
            <span className='font-outline-2 text-black'> OUR </span><br/> SERVICES.
-          </h3>
+          </h1>
         <p className='text-xl lg:text-2xl text-white leading-10'>
         We execute effective strategies that drive traffic, engagement and lead conversion across the web: 
         from websites, organic search, paid media and social advertising to email marketing and display campaigns.
