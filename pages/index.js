@@ -9,7 +9,7 @@ import {
   Nav,
   ContactForm,
   Footer,
-  lome,
+  whatsapp,
   TopHeader,
 } from "../components/Imports";
 
@@ -21,6 +21,9 @@ import research from "../components/svg/research.svg";
 import design from "../components/svg/design.svg";
 import develop from "../components/svg/develop.svg";
 import marketing from "../components/svg/marketing.svg";
+
+//whatsapp widget
+
 
 
 export const getStaticProps = async () => {
@@ -69,13 +72,13 @@ export default function Home({ blogPosts }) {
       <div className="relative bg-black h-screen text-white overflow-hidden">
         <div className="absolute inset-o"></div>
 
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1 className="text-5xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 ">
+        <div className="relative z-0 flex flex-col justify-center items-center h-full text-center -top-10">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-10 ">
             Web Design High Wycombe
             <br />
             Leading Online Marketing Experts
           </h1>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-gray-300 mb-6">
             Bringing your dreams one step closer.
           </p>
           <Link href="/#contact">
@@ -85,11 +88,25 @@ export default function Home({ blogPosts }) {
           </Link>
         </div>
       </div>
-
+     
+     
+           <Link href="https://wa.me/447907772626">
+          
+          <Image
+          className="cursor-pointer fixed bottom-2 right-2 lg:right-12 z-100 w-16 h-16 " 
+          src={whatsapp}
+          width={50}
+          height={50}
+          />
+          
+           </Link>
+       
+       
       <div
         className="flex justify-between bg-black text-white 
  gap-4 lg:gap-0
-h-20 text-xl lg:text-3xl p-5 font-bold"
+h-20 text-xl lg:text-3xl p-5 font-bold
+"
       >
         <div>
           <h3>300+ clients</h3>
