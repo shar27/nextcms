@@ -39,14 +39,11 @@ function About() {
 
 <div className="w-full bg-black text-white font-bold">
       <div className="flex flex-col p-10">
-        <h3 className="text-2xl lg:text-3xl text-center mb-10">Experts in our fields</h3>
+        <h3 className="text-2xl lg:text-3xl text-center mb-10">Experts In Our Fields</h3>
 
         <p className="text-xl lg:text-2xl leading-10 text-center">
-          We are a dynamic and inclusive collective of digital aficionados. Our
-          tightly-knit team is swiftly expanding, honing expertise in
-          cutting-edge development and digital marketing trends. With a wealth
-          of experience, we craft impactful digital solutions that deliver
-          tangible results. 
+        We are an experienced web development team specializing in large government contracts, handling millions of traffic per month. With a keen eye for detail 
+        and a focus on improving customer journeys, we craft impactful digital solutions that deliver tangible results. 
           
           <br/>
           <br/>
@@ -56,13 +53,15 @@ function About() {
           
           <br/>
           <br/>
-          Need a visually
-          stunning, high-performing website or digital campaign? Seeking to
-          elevate your online presence and captivate your audience? Let us
-          propel your brand forward, ensuring heightened visibility, enhanced
-          engagement, and increased sales. Together, we can turn your digital
-          aspirations into reality.
+          As a trusted developer working in one of the top 4 consulting firms globally, I specialize in collaborating with brands and organizations worldwide. With the ability to work with any technology stack, I focus on developing digital products and innovative marketing 
+          strategies tailored to align with your business objectives and deliver the results you need.
+        
+        <br/>
+        <br/>
+        Are you ready to bring your digital dreams to life? I'm here to make it happen. With my expertise in handling large government contracts and optimizing customer journeys, I'll transform your online presence into a powerhouse. Let's collaborate and 
+        elevate your web design in High Wycombe and beyond. Reach out today, and let's turn your vision into reality!
         </p>
+        
       </div>
       </div>
       <section className="flex justify-center">
