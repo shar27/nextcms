@@ -93,7 +93,7 @@ export default function Home({ blogPosts }) {
            <Link href="https://wa.me/447907772626">
           
           <Image
-          className="cursor-pointer fixed bottom-2 right-2 lg:right-12 z-100 w-16 h-16 " 
+          className="cursor-pointer fixed bottom-2 right-10 lg:right-12 z-100 w-16 h-16 " 
           src={whatsapp}
           width={50}
           height={50}
