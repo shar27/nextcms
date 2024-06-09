@@ -44,6 +44,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <title>Web Design High Wycombe</title>
       </Head>
+      <html lang="en">
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -64,6 +65,7 @@ function MyApp({ Component, pageProps }) {
       />
       
       <Component {...pageProps} />
+      </html>
     </>
   );
 }

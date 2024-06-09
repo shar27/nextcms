@@ -80,7 +80,7 @@ console.log(imageUrl);
         className='object-cover'
         layout='fill'
         src={'https:' + post.fields.featured.fields.file.url + '?w=1600&h=800&fm=jpg&q=80'}
-        alt='The Hive'
+        alt={'https:' + post.fields.featured.fields.file.url}
       />
     </div>
       <div className='p-5 lg:p-20 container leading-10 font-sans flex flex-col mt-auto '>
@@ -90,7 +90,7 @@ console.log(imageUrl);
         className='object-cover'
         layout='fill'
         
-        
+        alt={'https:' + post.fields.featured.fields.file.url}
           src={'https:' + imageUrl}
           />
       </div>

@@ -20,6 +20,7 @@ function About() {
       <div className="relative w-full h-screen  opacity-75 z-0">
         <Image
           className="absolute top-0 left-0 w-full h-screen lg:h-full"
+          alt="about"
           src={lome}
           width={300}
           height={500}

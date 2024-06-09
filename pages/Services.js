@@ -69,6 +69,7 @@ function Services() {
           src={Gif}
           width={300}
           height={500}
+          alt='our-services'
         />
   </div>
        
