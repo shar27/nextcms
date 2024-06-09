@@ -11,6 +11,14 @@ import {
   Footer,
   whatsapp,
   TopHeader,
+  css,
+  bootstrap,
+  tailwind,
+  javascript,
+  react,
+  wordpress,
+  wix,
+  nextjs
 } from "../components/Imports";
 
 //blogposts
@@ -103,19 +111,78 @@ export default function Home({ blogPosts }) {
        
        
       <div
-        className="flex justify-between bg-black text-white 
+        className="grid grid-cols-4 lg:grid-cols-8 bg-black text-white 
  gap-4 lg:gap-0
-h-20 text-xl lg:text-3xl p-5 font-bold
+ z-100 
+p-5 font-bold
 "
       >
         <div>
-          <h3>300+ clients</h3>
+          <Image
+          alt="wordpress"
+          src={wordpress}
+          width={150}
+          height={150}
+          />
         </div>
         <div>
-          <h3>100% success rate</h3>
+          <Image
+          alt="javascript"
+          src={javascript}
+          width={100}
+          height={100}
+          />
         </div>
         <div>
-          <h3 className="">100+ 5 star reviews</h3>
+          <Image
+          className="mt-0 lg:-mt-5"
+          alt="css"
+          src={css}
+          width={100}
+          height={100}
+          />
+        </div>
+        <div>
+        <Image
+          alt="react"
+          src={react}
+          width={100}
+          height={100}
+          />
+        </div>
+        <div>
+        <Image
+        className="bg-white"
+          alt="wix"
+          src={wix}
+          width={100}
+          height={100}
+          />
+        </div>
+        <div>
+        <Image
+          alt="bootstrap"
+          src={bootstrap}
+          width={100}
+          height={100}
+          />
+        </div>
+        <div>
+        <Image
+        className="bg-white"
+          alt="nextjs"
+          src={nextjs}
+          width={100}
+          height={100}
+          />
+        </div>
+        <div>
+        <Image
+          alt="tailwind"
+          src={tailwind}
+          width={100}
+          height={100}
+          />
         </div>
       </div>
 
