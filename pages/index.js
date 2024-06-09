@@ -21,9 +21,7 @@ import research from "../components/svg/research.svg";
 import design from "../components/svg/design.svg";
 import develop from "../components/svg/develop.svg";
 import marketing from "../components/svg/marketing.svg";
-import clutch from "../components/svg/clutch.svg";
-import theguardian from "../components/svg/theguardian.svg";
-import awwards from "../components/svg/awwards.svg";
+
 
 export const getStaticProps = async () => {
   const blogPosts = await fetchBlogPosts();
