@@ -81,7 +81,7 @@ export default function Home({ blogPosts }) {
         <div className="absolute inset-o"></div>
 
         <div className="relative z-0 flex flex-col justify-center items-center h-full text-center -top-10">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-10 ">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-0 lg:mb-10 ">
             Web Design High Wycombe
             <br />
             Leading Online Marketing Experts
@@ -108,10 +108,11 @@ export default function Home({ blogPosts }) {
           />
           
            </Link>
-       
-       
+          
       <div
-        className="grid grid-cols-4 lg:grid-cols-8 bg-black text-white 
+        className="grid grid-cols-4 lg:grid-cols-8 
+        absolute -bottom-72 md:-bottom-72 lg:-bottom-40 left-0 w-full
+        bg-black text-white 
  gap-4 lg:gap-0
  z-100 
 p-5 font-bold
@@ -186,14 +187,14 @@ p-5 font-bold
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 bg-black text-white  ">
-        <div className="leading-10 font-bold p-5 lg:p-16 col-span-2">
-          <h3 className="text-5xl mt-5">Inspiring change.</h3>
-          <h3 className="text-5xl mt-5">Results orientated.</h3>
-          <h3 className="text-5xl mt-5 text-nowrap">
+      <div className="grid grid-cols-1 lg:grid-cols-4 bg-black text-white mt-10 lg:mt-0 ">
+        <div className="leading-10 font-bold p-8 lg:p-16 col-span-2">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">Inspiring change.</h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">Results orientated.</h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5 text-nowrap">
             Best in house team (no-outsourcing).
           </h3>
-          <h3 className="text-5xl mt-5">We bring your vision to life.</h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">We bring your vision to life.</h3>
           <h4 className="text-lg mt-5">
             LOME is a High Wycombe Web design agency. We guarantee results
             across three key business areas: web design & build, social media &
