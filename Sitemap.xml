@@ -1,9 +1,3 @@
-// pages/sitemap.xml.js
-
-import React from 'react';
-
-const Sitemap = () => {
-    const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -54,11 +48,4 @@ const Sitemap = () => {
 
 </urlset>`;
 
-    return (
-        <React.Fragment>
-            {sitemapContent}
-        </React.Fragment>
-    );
-};
-
-export default Sitemap;
+  
