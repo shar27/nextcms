@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
+
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;; // Replace with your Measurement ID
 
@@ -65,6 +67,7 @@ function MyApp({ Component, pageProps }) {
       />
       
       <Component {...pageProps} />
+      <Analytics />
     
     </>
   );
