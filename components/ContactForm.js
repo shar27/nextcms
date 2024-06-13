@@ -66,7 +66,9 @@ export default function ContactUs () {
         </div>
       <div className='mt-auto'>
       <input className='w-full p-4 bg-customBlue text-white font-bold  cursor-pointer' 
-      type="submit" value="Send" />
+      type="submit" value="Send"
+      disabled={isSubmitting}
+      />
       </div>
     </form>
     </div>
