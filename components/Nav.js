@@ -52,7 +52,7 @@ function Nav() {
                 <a className="list-none text-white" href="/Services">Services</a>
               </li>
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="#casestudies">Case Studies</a>
+                <a className="list-none text-white" href="/#casestudies">Case Studies</a>
               </li>
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="/Blog">Blog</a>
@@ -72,7 +72,7 @@ function Nav() {
             <a href="/Services">Services</a>
           </li>
           <li className="list-none p-2">
-            <a href="#casestudies">Work</a>
+            <a href="/#casestudies">Work</a>
           </li>
           <li className="list-none p-2">
                 <a href="/Blog">Blog</a>
