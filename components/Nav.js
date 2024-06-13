@@ -55,6 +55,9 @@ function Nav() {
                 <a className="list-none text-white" href="#casestudies">Case Studies</a>
               </li>
               <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-white" href="/Blog">Blog</a>
+              </li>
+              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
                 <a className="list-none text-white" href="#contact">Contact</a>
               </li>
             </ul>
@@ -71,7 +74,9 @@ function Nav() {
           <li className="list-none p-2">
             <a href="#casestudies">Work</a>
           </li>
-        
+          <li className="list-none p-2">
+                <a href="/Blog">Blog</a>
+              </li>
           <li className="list-none p-2">
             <a href="/#contact">Contact</a>
           </li>
