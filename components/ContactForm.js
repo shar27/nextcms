@@ -18,7 +18,8 @@ export default function ContactUs () {
     }
 
     setIsSubmitting(true);
-
+    
+    const userEmail = form.current.user_email.value;
     // process.env.YOUR_TEMPLATE_ID
     emailjs.sendForm('service_39bg1xq', 'template_pju0m5e', form.current, '_zvfCNAUf1DOGw6zi')
       .then((result) => {
@@ -53,6 +54,9 @@ export default function ContactUs () {
       
       <label className='font-bold'>Email </label>
       <input className='w-full border-b-2 mb-5 ' required type="email" name="user_email" />
+      <br/>
+      <label className='font-bold'>Phone Number </label>
+      <input className='w-full border-b-2 mb-5 ' required type="tel" name="user_tel" placeholder="+44" />
       <br/>
       <label className='font-bold'>Message </label>
       <textarea required className='w-full h-52  border-b-2 mb-5' 
