@@ -20,6 +20,7 @@ import {
   wix,
   nextjs
 } from "../components/Imports";
+import google from '../components/assets/google.png'
 
 //blogposts
 import { fetchBlogPosts } from "../lib/contentful";
@@ -202,7 +203,7 @@ p-5 font-bold
           </h4>
 
           <section className="flex items-center mt-5">
-            <Link href="#" className="flex items-center">
+            <Link href="/About" className="flex items-center">
               <span className="mr-2 text-xl ">About us</span>{" "}
               <svg
                 className="animate-pulse"
@@ -375,6 +376,18 @@ p-5 font-bold
           </button>
         </div>
       </div>
+
+      {/* <div className="w-full h-20 flex justify-center p-5 mb-10">
+      <div className="">
+        <Image
+        className=""
+          alt="google"
+          src={google}
+          width={300}
+          height={200}
+          />
+        </div>
+      </div> */}
 
       <h3
         id="casestudies"

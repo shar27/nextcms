@@ -30,14 +30,14 @@ export default function ContactUs () {
       <p className='text-xl text-red-500 font-bold p-2'>{text}</p>
       
       <label className='font-bold'>Name </label>
-      <input className='w-full border-b-2   mb-5' type="text" name="user_name" />
+      <input className='w-full border-b-2   mb-5' required type="text" name="user_name" />
       <br/>
       
       <label className='font-bold'>Email </label>
-      <input className='w-full border-b-2 mb-5 ' type="email" name="user_email" />
+      <input className='w-full border-b-2 mb-5 ' required type="email" name="user_email" />
       <br/>
       <label className='font-bold'>Message </label>
-      <textarea className='w-full h-52  border-b-2 mb-5' 
+      <textarea required className='w-full h-52  border-b-2 mb-5' 
       name="message" />
       <br/>
       <div className='mt-auto'>

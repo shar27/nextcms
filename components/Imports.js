@@ -6,6 +6,7 @@ export {default as lome} from '../components/svg/lome.svg'
 export {default as whatsapp} from '../components/svg/whatsapp.svg'
 
 export {default as wix} from '../components/svg/wix.svg'
+export {default as google} from '../components/svg/greviews.svg'
 export {default as tailwind} from '../components/svg/tailwind.svg'
 export {default as nextjs} from '../components/svg/nextjs.svg'
 export {default as react} from '../components/svg/react.svg'
