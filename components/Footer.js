@@ -34,11 +34,9 @@ function Footer() {
         
         <ul className='font-serif p-10 lg:p-0'>
           <Link href="#">
-            <li className='text-2xl list-none text-white font-bold'>Web Design High Wycombe</li>
-          <li className='text-white text-lg list-none'>220, The Old Dairy</li>
-           <li className='text-white text-lg list-none'>Stapleton House</li>
-            <li className='text-white text-lg list-none'>110-122 Clifton St,</li>
-             <li className='text-white text-lg list-none'>London EC2A 4HT</li>
+            <li className='text-xl list-none text-white font-bold'>Web Design High Wycombe <span className='text-xl'>is a trading name</span> </li>
+          <li className='text-white text-lg list-none'>Our registered company is SWIFT UK PROPERTY INVESTMENTS LTD</li>
+          <li className='text-white text-lg list-none'>Company Number: 15244665</li>
              <li className='text-white text-lg list-none'>📞 0333 360 6113</li>
              <li className='text-white text-lg list-none'>📧 hello@webdesignhighwycombe.co.uk</li>
              
