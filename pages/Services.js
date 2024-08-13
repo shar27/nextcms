@@ -32,6 +32,12 @@ function Services() {
       content: "We begin by identifying key performance indicators (KPIs) aligned with your business objectives. Our team then implements robust analytics tools to track website traffic, user behavior, and conversion metrics. We analyze the data collected to gain valuable insights into your audience's preferences and behaviors. Finally, we provide comprehensive reports and recommendations to optimize your marketing efforts and drive continuous improvement.",
       isShowing: false,
     },
+    {
+      id: 4,
+      title: "Cloud Migratrion",
+      content: "Switching to the cloud can be of a great benefit financially as upfront capital expenditures can really take a toll on a business, get in touch today to see how we can help",
+      isShowing: false,
+    },
   ]);
 
   const toggleDiv = (id) => {
