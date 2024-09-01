@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 import Image from 'next/image'
-import logo from '../components/assets/logo/logo.svg'
+// import logo from '../components/assets/logo/lomelogo.svg'
+import logo from '../components/assets/logo/lomelogo.jpg'
+
+
 
 function Nav() {
 
@@ -9,14 +12,14 @@ function Nav() {
 
   
   return (
-    <div className="flex items-center justify-between border-b border-white  bg-black z-100">
+    <div className="flex items-center justify-between border-b border-white  bg-white  z-100">
       <a href="/">
-        <Image  src={logo} alt="logo" width={150} height={150} className="w-full max-w-md " />
+        <Image  src={logo} alt="logo" width={100} height={100} className="w-full max-w-md " />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-2 bg-black text-black"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
             <span className="block h-0.5 w-8  bg-white"></span>
@@ -30,7 +33,7 @@ function Nav() {
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -43,22 +46,22 @@ function Nav() {
               </svg>
             </div>
             <ul className="MENU-LINK-MOBILE-OPEN list-none flex flex-col items-center 
-            justify-between min-h-[250px] ">
+            justify-between min-h-[250px] bg-white w-full ">
               <li className="list-none border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="/About">About</a>
+                <a className="list-none text-black" href="/About">About</a>
               </li>
              
-              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="/Services">Services</a>
+              <li className="list-none text-black border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-black" href="/Services">Services</a>
               </li>
-              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="/#casestudies">Case Studies</a>
+              <li className="list-none text-black border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-black" href="/#casestudies">Case Studies</a>
               </li>
-              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="/Blog">Blog</a>
+              <li className="list-none text-black border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-black" href="/Blog">Blog</a>
               </li>
-              <li className="list-none text-white border-b border-gray-400 my-8 uppercase">
-                <a className="list-none text-white" href="#contact">Contact</a>
+              <li className="list-none text-black border-b border-gray-400 my-8 uppercase">
+                <a className="list-none text-black" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -66,19 +69,19 @@ function Nav() {
 
         <ul className="DESKTOP-MENU hidden lg:flex justify-between text-xl ">
           <li className="list-none p-2">
-            <a href="/About">About</a>
+            <a className="text-black" href="/About">About</a>
           </li>
           <li className="list-none p-2">
-            <a href="/Services">Services</a>
+            <a className="text-black" href="/Services">Services</a>
           </li>
           <li className="list-none p-2">
-            <a href="/#casestudies">Work</a>
+            <a className="text-black" href="/#casestudies">Work</a>
           </li>
           <li className="list-none p-2">
-                <a href="/Blog">Blog</a>
+                <a className="text-black" href="/Blog">Blog</a>
               </li>
           <li className="list-none p-2">
-            <a href="/#contact">Contact</a>
+            <a className="text-black" href="/#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -94,6 +97,7 @@ function Nav() {
         top: 0;
         left: 0;
         background: black;
+        color:black;
         z-index: 11;
         display: flex;
         flex-direction: column;

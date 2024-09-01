@@ -18,9 +18,9 @@ import {
   react,
   wordpress,
   wix,
-  nextjs
+  nextjs,
 } from "../components/Imports";
-import google from '../components/assets/google.png'
+import google from "../components/assets/google.png";
 
 //blogposts
 import { fetchBlogPosts } from "../lib/contentful";
@@ -32,8 +32,6 @@ import develop from "../components/svg/develop.svg";
 import marketing from "../components/svg/marketing.svg";
 
 //whatsapp widget
-
-
 
 export const getStaticProps = async () => {
   const blogPosts = await fetchBlogPosts();
@@ -71,14 +69,14 @@ export default function Home({ blogPosts }) {
   };
 
   return (
-    <div className=" font-serif ">
+    <div className=" font-serif bg-white text-black">
       <Head>
         <title>High Wycombe Web Design</title>
       </Head>
       <TopHeader />
       <Nav />
 
-      <div className="relative bg-black h-screen text-white overflow-hidden">
+      <div className="relative  h-screen text-black overflow-hidden">
         <div className="absolute inset-o"></div>
 
         <div className="relative z-0 flex flex-col justify-center items-center h-full text-center -top-10">
@@ -87,7 +85,7 @@ export default function Home({ blogPosts }) {
             <br />
             Leading Online Marketing Experts
           </h1>
-          <p className="text-xl text-gray-300 mb-6">
+          <p className="text-xl text-black mb-6">
             Bringing your dreams one step closer.
           </p>
           <Link href="/#contact">
@@ -97,105 +95,83 @@ export default function Home({ blogPosts }) {
           </Link>
         </div>
       </div>
-     
-     
-           <Link href="https://wa.me/447907772626">
-          
-          <Image
-          className="cursor-pointer fixed bottom-2 right-10 lg:right-12 z-100 w-16 h-16 " 
+
+      <Link href="https://wa.me/447907772626">
+        <Image
+          className="cursor-pointer fixed bottom-2 right-10 lg:right-12 z-100 w-16 h-16 "
           src={whatsapp}
           width={50}
           height={50}
-          />
-          
-           </Link>
-          
+        />
+      </Link>
+
       <div
         className="grid grid-cols-4 lg:grid-cols-8 
         absolute -bottom-72 md:-bottom-72 lg:-bottom-40 left-0 w-full
-        bg-black text-white 
+         text-black 
  gap-4 lg:gap-0
  z-100 
 p-5 font-bold
 "
       >
         <div>
-          <Image
-          alt="wordpress"
-          src={wordpress}
-          width={150}
-          height={150}
-          />
+          <Image alt="wordpress" src={wordpress} width={150} height={150} />
+        </div>
+        <div>
+          <Image alt="javascript" src={javascript} width={100} height={100} />
         </div>
         <div>
           <Image
-          alt="javascript"
-          src={javascript}
-          width={100}
-          height={100}
+            className="mt-0 lg:-mt-5"
+            alt="css"
+            src={css}
+            width={100}
+            height={100}
           />
+        </div>
+        <div>
+          <Image alt="react" src={react} width={100} height={100} />
         </div>
         <div>
           <Image
-          className="mt-0 lg:-mt-5"
-          alt="css"
-          src={css}
-          width={100}
-          height={100}
+            className="bg-white"
+            alt="wix"
+            src={wix}
+            width={100}
+            height={100}
           />
         </div>
         <div>
-        <Image
-          alt="react"
-          src={react}
-          width={100}
-          height={100}
+          <Image alt="bootstrap" src={bootstrap} width={100} height={100} />
+        </div>
+        <div>
+          <Image
+            className="bg-white"
+            alt="nextjs"
+            src={nextjs}
+            width={100}
+            height={100}
           />
         </div>
         <div>
-        <Image
-        className="bg-white"
-          alt="wix"
-          src={wix}
-          width={100}
-          height={100}
-          />
-        </div>
-        <div>
-        <Image
-          alt="bootstrap"
-          src={bootstrap}
-          width={100}
-          height={100}
-          />
-        </div>
-        <div>
-        <Image
-        className="bg-white"
-          alt="nextjs"
-          src={nextjs}
-          width={100}
-          height={100}
-          />
-        </div>
-        <div>
-        <Image
-          alt="tailwind"
-          src={tailwind}
-          width={100}
-          height={100}
-          />
+          <Image alt="tailwind" src={tailwind} width={100} height={100} />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 bg-black text-white mt-10 lg:mt-0 ">
+      <div className="grid grid-cols-1 lg:grid-cols-4  text-black mt-10 lg:mt-0 ">
         <div className="leading-10 font-bold p-8 lg:p-16 col-span-2">
-          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">Inspiring change.</h3>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">Results orientated.</h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">
+            Inspiring change.
+          </h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">
+            Results orientated.
+          </h3>
           <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5 text-nowrap">
             Best in house team (no-outsourcing).
           </h3>
-          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">We bring your vision to life.</h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl mt-5">
+            We bring your vision to life.
+          </h3>
           <h4 className="text-lg mt-5">
             LOME is a High Wycombe Web design agency. We guarantee results
             across three key business areas: web design & build, social media &
@@ -222,14 +198,12 @@ p-5 font-bold
           </section>
         </div>
         {/* col 2 */}
-        <div className="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col items-center justify-center md:justify-self-center lg:justify-self-end">
-      
-        </div>
+        <div className="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col items-center justify-center md:justify-self-center lg:justify-self-end"></div>
       </div>
       {showArrow && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-gray-800 text-white p-2 rounded-full"
+          className="fixed bottom-4 right-4 bg-transparent text-black p-2 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -332,7 +306,7 @@ p-5 font-bold
             Step 4 - Execute strategy
           </h2>
           <Image
-          alt="marketing"
+            alt="marketing"
             src={marketing}
             width={500}
             height={500}
@@ -355,39 +329,6 @@ p-5 font-bold
           </p>
         </div>
       </div>
-
-      <div className="relative w-full h-screen  opacity-75 z-0">
-        <iframe
-          className="absolute top-0 left-0 w-full h-full"
-          src="https://www.youtube.com/embed/8ZMxLZqL73M?autoplay=1&loop=1&controls=0&showinfo=0&mute=1&playlist=8ZMxLZqL73M"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-          allowfullscreen
-        ></iframe>
-
-        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-100 h-screen">
-          <h3 className="text-3xl lg:text-5xl font-bold bg-none lg:bg-black text-white p-4 rounded mb-5">
-            Discover The Power Of The Web With Our Experts.
-          </h3>
-
-          <button className="bg-customBlue text-white rounded-sm w-48 lg:w-32 p-2 text-xl">
-            Get in touch
-          </button>
-        </div>
-      </div>
-
-      {/* <div className="w-full h-20 flex justify-center p-5 mb-10">
-      <div className="">
-        <Image
-        className=""
-          alt="google"
-          src={google}
-          width={300}
-          height={200}
-          />
-        </div>
-      </div> */}
 
       <h3
         id="casestudies"

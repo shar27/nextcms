@@ -1,1 +1,47 @@
-@tailwind base;@tailwind components;@tailwind utilities;@layer base{.font-outline-2{-webkit-text-stroke:2px white}.font-outline-4{-webkit-text-stroke:4px black}}html,body{padding:0;margin:0;font-family:sans-serif;scroll-behavior:smooth;overflow-x:hidden;width:100%;background-color:#fff;color:#000}body{overflow-y:auto}a{color:#fff;text-decoration:none}li a{list-style-type:none}li{list-style-type:disc}*{box-sizing:border-box}@media(prefers-color-scheme:dark){html{color-scheme:dark}body{color:#fff;background:#000}}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px white;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: white;
+  color: #000;
+}
+body {
+  overflow-y: auto;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+li a {
+  list-style-type: none;
+}
+li {
+  list-style-type: disc;
+}
+* {
+  box-sizing: border-box;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: #fff;
+    background: #000;
+  }
+}
