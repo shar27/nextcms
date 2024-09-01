@@ -52,13 +52,13 @@ function Services() {
       <TopHeader/>
       <Nav />
 
-      <div className="bg-black grid grid-cols-1 lg:grid-cols-2 w-full h-screen p-0 lg:p-20">
+      <div className="bg-white grid grid-cols-1 lg:grid-cols-2 w-full h-screen p-0 lg:p-20">
         
       <div className="flex flex-col p-4">
-          <h1 className="text-3xl lg:text-9xl font-bold  text-white rounded mb-5">
+          <h1 className="text-3xl lg:text-9xl font-bold  text-black rounded mb-5">
            <span className='font-outline-2 text-black'> OUR </span><br/> SERVICES.
           </h1>
-        <p className='text-xl lg:text-2xl text-white leading-10'>
+        <p className='text-xl lg:text-2xl text-black leading-10'>
         We execute effective strategies that drive traffic, engagement and lead conversion across the web: 
         from websites, organic search, paid media and social advertising to email marketing and display campaigns.
         </p>
@@ -74,9 +74,9 @@ function Services() {
   </div>
        
       </div>
-      <h3 className="text-3xl lg:text-7xl font-bold bg-black text-white text-center">Technology</h3>
+      <h3 className="text-3xl lg:text-7xl font-bold bg-white text-black text-center">Technology</h3>
 <div className="grid grid-cols-1 lg:grid-cols-2 
-p-10 lg:p-20 gap-0 lg:gap-72 bg-black text-white">
+p-10 lg:p-20 gap-0 lg:gap-72 bg-white text-black">
       <div className="">
       
 
