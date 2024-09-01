@@ -103,7 +103,7 @@ p-10 lg:p-20 gap-0 lg:gap-72 bg-white text-black">
           {isShowing && (
             <div className="mt-4 p-4 border border-gray-300 rounded">
               <p>{content}</p>
-              <p>You can add more content here as needed.</p>
+              
             </div>
           )}
         </div>
@@ -112,7 +112,7 @@ p-10 lg:p-20 gap-0 lg:gap-72 bg-white text-black">
       </div>
 
 
-      <section className="flex justify-center">
+      <section className="flex justify-center bg-white text-black">
       <ContactForm/>
      
       </section>
