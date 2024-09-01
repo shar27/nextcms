@@ -93,9 +93,9 @@ export default function Post({ post }) {
       <h1 className='text-5xl text-center p-5 '>{title}</h1>
       <h2 className='text-3xl text-center p-5 '>{heading}</h2>
       
-      <div className='relative w-full h-screen'>
+      <div className='relative w-full h-72 lg:h-screen'>
       <Image 
-        className='object-cover'
+        className='object-cover w-full h-96 lg:h-screen'
         layout='fill'
         src={'https:' + post.fields.featured.fields.file.url + '?w=1600&h=800&fm=jpg&q=80'}
         alt={'https:' + post.fields.featured.fields.file.url}

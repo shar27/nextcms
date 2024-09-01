@@ -75,7 +75,7 @@ console.log(imageUrl);
 
       <h1 className='text-5xl text-center p-5 uppercase'>{title}</h1>
       
-      <div className='relative w-full h-screen'>
+      <div className='relative w-full h-72 lg:h-screen'>
       <Image 
         className='object-cover'
         layout='fill'
@@ -85,7 +85,7 @@ console.log(imageUrl);
     </div>
       <div className='p-5 lg:p-20 container leading-10 font-sans flex flex-col mt-auto '>
         {documentToReactComponents(content)}</div>
-      <div className='relative w-full h-screen'>
+      <div className='relative w-full h-96 lg:h-screen'>
       <Image 
         className='object-cover'
         layout='fill'
