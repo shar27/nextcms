@@ -359,7 +359,7 @@ p-5 font-bold
           </div>
         ))}
       </div>
-      <section id="contact" className="flex justify-center">
+      <section id="contact" >
         <ContactForm />
       </section>
 

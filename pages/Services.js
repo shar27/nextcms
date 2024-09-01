@@ -112,10 +112,9 @@ p-10 lg:p-20 gap-0 lg:gap-72 bg-white text-black">
       </div>
 
 
-      <section className="flex justify-center bg-white text-black">
+     
       <ContactForm/>
      
-      </section>
       <Footer/>
     </div>
   )

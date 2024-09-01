@@ -64,10 +64,10 @@ function About() {
         
       </div>
       </div>
-      <section className="flex justify-center">
+     
       <ContactForm/>
      
-      </section>
+     
       <Footer/>
     </div>
   );

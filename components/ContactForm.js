@@ -40,7 +40,7 @@ export default function ContactUs () {
 
 
   return (
-   
+ <div className="flex justify-center">  
 <div className='container max-w-xl p-2 lg:p-20'>
     
     <h3 className='text-3xl lg:text-5xl text-black font-bold text-center'>Get in touch</h3>
@@ -75,6 +75,7 @@ export default function ContactUs () {
       />
       </div>
     </form>
+    </div>
     </div>
   );
 };
